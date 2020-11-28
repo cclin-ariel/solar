@@ -14,6 +14,11 @@ html {
 }
 */
 
+@keyframes sunlight {
+    from {box-shadow: 0 0 45px #f5c91a;}
+    to {box-shadow: 0 0 90px #f5c91a;}
+}
+
 #sun {
     background: repeating-radial-gradient(yellow, orange);
     width: 200px;
@@ -24,5 +29,8 @@ html {
     left: 50%;
     margin-top: -100px;
     margin-left: -100px;
+    box-shadow: 0 0 45px #f5c91a;
+
+    animation: sunlight 4s infinite alternate;
 
 }
